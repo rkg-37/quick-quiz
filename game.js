@@ -92,7 +92,7 @@ function getNewQuestion() {
   if (availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
     // got to the end page
     localStorage.setItem("mostRecentScore", score);
-    return location.replace("end.html");
+    return window.location.assign("quick-quiz/end.html");
   }
 
   questionCounter++;
