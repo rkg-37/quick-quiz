@@ -30,6 +30,6 @@ function saveHighScore(e) {
   highScore.splice(5);
 
   localStorage.setItem("highScore", JSON.stringify(highScore));
-  window.location.assign("/quick-quiz/index.html");
+  window.location.assign("index.html");
   console.log(highScore);
 }
